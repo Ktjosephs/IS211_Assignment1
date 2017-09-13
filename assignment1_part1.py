@@ -3,18 +3,6 @@
 """Assignment 1, part 1."""
 
 def listdivide(numbers, divide=2):
-    """
-    Args:
-        numbers (list): List of Numbers to divide on.
-        divide (int): Interger used to divide numbers list.
-        divisible (list): List of divisible numbers.
-    Returns:
-        divisible (list): A list of divisible numbers.
-    Examples:
-        >>> test = testListDivide([1,2,3,4,5])
-        >>> print test
-        >>> [2, 4]
-    """
     divisible = []
     for values in numbers:
         if values % divide == False:
@@ -22,22 +10,9 @@ def listdivide(numbers, divide=2):
     return divisible
 
 class ListDivideException(Exception):
-    """
-    Attributes:
-        None
-    """
     pass
 
 def testlistdivide():
-    """
-    Args:
-        None
-    Returns:
-        None
-    Examples:
-        >>> testListDivide()
-        >>>
-    """
     try:
         listdivide([1, 2, 3, 4, 5])
         listdivide([2, 4, 6, 8, 10])
